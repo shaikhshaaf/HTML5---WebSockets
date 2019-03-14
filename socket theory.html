@@ -1,0 +1,21 @@
+
+
+WebSockets is a next-generation bidirectional communication technology for 
+web applications which operates over a single socket and is exposed via a JavaScript 
+interface in HTML 5 compliant browsers.
+
+
+nce you get a Web Socket connection with the web server, you can send data from browser to server by calling a send() method, and receive data from server to browser by an onmessage event handler.
+
+Following is the API which creates a new WebSocket object.
+
+var Socket = new WebSocket(url, [protocal] );
+
+
+
+Event	  Event Handler	        Description
+
+open	  Socket.onopen	        This event occurs when socket connection is established.
+message	  Socket.onmessage	    This event occurs when client receives data from server.
+error	  Socket.onerror	    This event occurs when there is any error in communication.
+close	  Socket.onclose	    This event occurs when connection is closed.
